@@ -92,6 +92,10 @@ The exact rollback command is printed at the end of each successful migration.
 
 **Run from a machine with access to both instances.** The script downloads the dev backup locally and re-uploads it to prod. It does not do a direct instance-to-instance transfer. Make sure the machine running the script can reach both URLs.
 
+## Roadmap
+
+- CI-driven version enforcement — GitHub Action that reads `__version__` from `migrate.py`, auto-tags on merge to main, and fails if the version wasn't bumped
+
 ## Contribute
 
 Feel free to add issue requests for bugs. I'm open to considering non-breaking features if it would be helpful to someone.
