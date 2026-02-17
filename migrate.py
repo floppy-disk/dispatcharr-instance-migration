@@ -28,6 +28,8 @@ import sys
 import time
 from pathlib import Path
 
+__version__ = "0.1.0-alpha"
+
 try:
     from dotenv import load_dotenv
 
@@ -541,6 +543,9 @@ def rollback(backup_arg: str, backup_dir: Path, skip_refresh: bool) -> None:
 def main():
     parser = argparse.ArgumentParser(
         description="Migrate Dispatcharr state from dev to prod via backup/restore."
+    )
+    parser.add_argument(
+        "--version", action="version", version=f"%(prog)s {__version__}"
     )
     parser.add_argument(
         "--dry-run",
