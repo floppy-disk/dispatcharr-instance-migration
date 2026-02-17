@@ -1,6 +1,6 @@
 # Dispatcharr Dev → Prod Migration Tool
 
-Migrates state from a dev Dispatcharr instance to prod via the backup/restore API. Single Python script designed to run from Komodo or the command line.
+Migrates state from a dev Dispatcharr instance to prod via the backup/restore API. Single Python script designed to run from Komodo or the command line. Built with the help of [Claude](https://claude.ai).
 
 ## How It Works
 
